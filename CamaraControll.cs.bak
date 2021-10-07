@@ -59,7 +59,7 @@ public class CamaraControll : MonoBehaviour
         this.gameObject.transform.Translate(updateLen, 0, 0);
 
         //石井追加部分② 視界不良
-        if (Input.GetKeyDown(KeyCode.C) && isBlind == false)
+        if (Input.GetKeyDown(KeyCode.Q) && isBlind == false)
         {
             cameraLengthMemory = cam.orthographicSize;
             cam.orthographicSize = cam.orthographicSize * 0.5f;
@@ -67,7 +67,7 @@ public class CamaraControll : MonoBehaviour
             Debug.Log("Be Blind");
         }
         //石井追加部分➂ 視界不良回復
-        if (Input.GetKeyDown(KeyCode.V) && isBlind)
+        if (Input.GetKeyDown(KeyCode.W) && isBlind)
         {
             cam.orthographicSize = cameraLengthMemory;
             isBlind = false;

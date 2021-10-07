@@ -166,7 +166,7 @@ public class Player : MonoBehaviour
         }
 
         //石井追加部分① 移動速度低下
-        if (Input.GetKeyDown(KeyCode.Q) && isSlow == false)
+        if (Input.GetKeyDown(KeyCode.A) && isSlow == false)
         {
             speedMemory = updateLen;
             updateLen *= 0.5f;
@@ -174,7 +174,7 @@ public class Player : MonoBehaviour
             Debug.Log("speed down");
         }
         //石井追加部分② 移動速度回復
-        if (Input.GetKeyDown(KeyCode.E) && isSlow)
+        if (Input.GetKeyDown(KeyCode.S) && isSlow)
         {
             updateLen = speedMemory;
             isSlow = false;
